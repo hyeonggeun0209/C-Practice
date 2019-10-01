@@ -69,7 +69,7 @@ int main() {
 
 	int n;
 	a.pop(n);
-	cout << "½ºÅÃ a¿¡¼­ popÇÑ °ª " << n << endl;
+	cout << "ìŠ¤íƒ aì—ì„œ popí•œ ê°’ " << n << endl;
 	b.pop(n);
-	cout << "½ºÅÃ b¿¡¼­ popÇÑ °ª " << n << endl;
+	cout << "ìŠ¤íƒ bì—ì„œ popí•œ ê°’ " << n << endl;
 }
