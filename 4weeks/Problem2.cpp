@@ -15,7 +15,7 @@ int main() {
 	bool b = false;
 	char& loc = find(s, 'M', b);
 	if (b == false) {
-		cout << "MÀ» ¹ß°ßÇÒ ¼ö ¾ø´Ù" << endl;
+		cout << "MÃ€Â» Â¹ÃŸÂ°ÃŸÃ‡Ã’ Â¼Ã¶ Â¾Ã¸Â´Ã™" << endl;
 		return 0;
 	}
 	loc = 'm'; 
