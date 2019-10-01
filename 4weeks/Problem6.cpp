@@ -10,7 +10,7 @@ public:
 	~Book();
 	Book(const Book& book);
 	void set(string title, int price);
-	void show() { cout << title << ' ' << price << "��" << endl; }
+	void show() { cout << title << ' ' << price << "¿ø" << endl; }
 };
 
 Book::Book(string title, int price) {
@@ -33,9 +33,9 @@ void Book::set(string title, int price) {
 }
 
 int main() {
-	Book cpp("��ǰC++", 10000);
+	Book cpp("¸íÇ°C++", 10000);
 	Book java = cpp;
-	java.set("��ǰ�ڹ�", 12000);
+	java.set("¸íÇ°ÀÚ¹Ù", 12000);
 	cpp.show();
 	java.show();
 }
