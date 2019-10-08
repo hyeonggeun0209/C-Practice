@@ -41,18 +41,19 @@ public:
 
 int main() {
 	int size, n, p;
-	cout << "»ðÀÔÇÒ Á¤¼öÀÇ °³¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À>> ";
+	cout << "ì‚½ìž…í•  ì •ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤>> ";
 	cin >> size;
 	IntStack mstack(size);
-	cout << "½ºÅÃ¿¡ »ðÀÔÇÒ " << size << "°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¶ó>> ";
+	cout << "ìŠ¤íƒì— ì‚½ìž…í•  " << size << "ê°œì˜ ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ë¼>> ";
 	for (int i = 0; i < size; i++) {
 		cin >> n;
 		mstack.push(n);
 	}
-	cout << "ÀúÀåµÈ Á¤¼öÀÇ °³¼ö>> " << mstack.size() << endl;
-	cout << "¸ðµç ¿ø¼Ò¸¦ ÆËÇÏ¿© Ãâ·Â>> ";
+	cout << "ì €ìž¥ëœ ì •ìˆ˜ì˜ ê°œìˆ˜>> " << mstack.size() << endl;
+	cout << "ëª¨ë“  ì›ì†Œë¥¼ íŒí•˜ì—¬ ì¶œë ¥>> ";
 	while (mstack.size() != 0 ) {
-		cout << mstack.pop(p) << ' ';
+		mstack.pop(p);
+		cout << p << ' ';
 	}
-	cout << endl << "½ºÅÃÀÇ ÇöÀç Å©±â:" << mstack.size() << endl;
+	cout << endl << "ìŠ¤íƒì˜ í˜„ìž¬ í¬ê¸°:" << mstack.size() << endl;
 }
